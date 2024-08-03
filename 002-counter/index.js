@@ -17,7 +17,7 @@ counter();
 counter();
 
 /*
-What I understood:-
+How to solve:-
 
 1. Make a function that first gives the passed value so in this case 10 and in the next function call it increases it by one i.e 11 and so on.
 2. Simply use the [n ++] operator or use [n + 1].
