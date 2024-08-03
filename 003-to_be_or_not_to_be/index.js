@@ -32,15 +32,14 @@ var expect = function(val) {
 expect(5).toBe(5);
 
 /*
-What I understood:-
+How to solve:-
 
 1. So we are simply trying to create a function that will catch errors if they appear during testing using some conditionals.
 
 2. We are to return two functions: -
 
-2a. toBe function which will compare the user given value 'val' with the value that the function has 'expectedVal'. If they are similar then return 'true' and if not then throw error that says 'Not Equal'. The second part about throwing the error can be done using 'throw new Error("Not Equal")'. 
-
-2b. Similar to toBe the notToBe function will compare the user given value 'val' with the 'expectedVal'. If they are not similar then it returns 'true' and if are then throws an error that says 'Equal'.
+2a. toBe function which will compare the user-given value 'val' with the value that the function has 'expectedVal'. If they are similar then return 'true' and if not then throw error that says 'Not Equal'. The second part about throwing the error can be done using 'throw new Error("Not Equal")'. 
+2b. Similar to toBe the notToBe function will compare the user-given value 'val' with the 'expectedVal'. If they are not similar then it returns 'true' and if are then throws an error that says 'Equal'.
 
 3. If you look at 'expect(5).toBe(5)' which will trigger the execution you'll understand that we've to use an object for execution. So both the functions will be created as property value pairs with a common separating these properties that are 'toBe' and 'notToBe'.
 
