@@ -43,8 +43,7 @@ How to solve:-
 
 3. If you look at 'expect(5).toBe(5)' which will trigger the execution you'll understand that we've to use an object for execution. So both the functions will be created as property value pairs with a common separating these properties that are 'toBe' and 'notToBe'.
 
-
-Example of an object in Javascript:-
+Note 1: Example of an object in Javascript:-
 var rose = {
     Family: "Rosaceae"
     ,Genus: "Rosa"
@@ -53,8 +52,7 @@ var rose = {
 console.log(rose.Family);
 Will return the answer -> Rosaceae
 
-
-More about 'throw new Error([message])':-
+Note 2: More about 'throw new Error([message])':-
 
 The throw new Error statement in JavaScript is used to create and throw a new instance of the Error object. This mechanism is a key part of error handling in JavaScript, allowing you to signal that an error has occurred in your code and provide a specific error message or custom error object.
 About 'throw new Error([message])' -> throw: This keyword is used to throw an exception. When an exception is thrown, the current function's execution is stopped, and control is transferred to the nearest catch block in the call stack. If no catch block is found, the program will terminate. Error: The Error constructor creates an error object with a given message. This error object can then be thrown using the throw statement. message: A string describing the error. This is an optional parameter.
