@@ -40,11 +40,11 @@ counter.decrement();
 
 /*
 
-What I understood:-
+How to solve:-
 
 Think of it as a follow up on 002-counter
 
-1. Similar to the previous on we are going to use Js objects to solve this one.
+1. Similar to the previous one we are going to use Js objects to solve this one.
 
 2. This time we have to use another variable aside from 'init', because we have to reset the value after increment and decrement to this 'init' value.
 
