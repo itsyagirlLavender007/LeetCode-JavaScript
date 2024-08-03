@@ -47,6 +47,14 @@ console.log(arr);
 
 The output to this will be [1 , 2, 3, 4, 5, 6, 7, 8, 9, 10]. If you want to get individual value then iterate again over the new array 'arr' or use square brackets like 'arr[0]' will give the value 1 at the zero index. Array index starts with 0.
 
+Note 5: You can also use the following 'for in' statement to iterate over 'arr': - 
+
+for (let i in arr) { 
+    result.push(fn(arr[i], Number(i))) 
+    } 
+
+Be careful with this method because arrays are also objects in javascript as they are not primitive[hold single values]. So the second parameter which is 'i' will be expecting string, because every property-value pair of an object is treated as a string. In order to get an integer we have to do type conversion with the help of 'Number'.
+
 4. Since we are only calling the function fn, all we have to do is give it the parameters that are already defined in the question i.e. fn(arr[i], i) and then we apply the push() method on the empty array 'result'. 
 
 5. After the entire array is iterated over we return the 'result' array outside of the for loop.
