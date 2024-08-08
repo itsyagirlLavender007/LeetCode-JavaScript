@@ -14,7 +14,7 @@ var argumentsLength = function(...args) {
 
 /*
 
-How to solve:
+How to solve:-
 
 1. Probably the easiest one as we only have to return the length of the arguments passed. We simply used the length property on it using 'args.length' and return it. 
 
