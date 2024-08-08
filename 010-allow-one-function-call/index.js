@@ -24,7 +24,7 @@ var once = function(fn) {
 
 /*
 
-How to solve:
+How to solve:-
 
 1. 'var once' is the new function that ensures that 'fn' function is passed atmost once i.e one time compulsorily. 
 
