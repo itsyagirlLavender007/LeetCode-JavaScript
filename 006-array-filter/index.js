@@ -12,7 +12,6 @@ Please solve it without the built-in Array.filter method.
  
 */
 
-
 /**
  * @param {number[]} arr
  * @param {Function} fn
