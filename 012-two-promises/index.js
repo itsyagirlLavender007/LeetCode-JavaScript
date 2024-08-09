@@ -11,7 +11,7 @@ Given two promises promise1 and promise2, return a new promise. promise1 and pro
  */
 var addTwoPromises = async function(promise1, promise2) {
     return Promise.all([promise1, promise2])
-    .then(([value1, value2])=>value1 + value2);
+    .then(([value1, value2]) => value1 + value2);
     };
     
 /*
