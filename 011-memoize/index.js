@@ -11,7 +11,7 @@ fib accepts a single integer n and returns 1 if n <= 1 or fib(n - 1) + fib(n - 2
 factorial accepts a single integer n and returns 1 if n <= 1 or factorial(n - 1) * n otherwise.
  
 */
-
+ 
 /**
  * @param {Function} fn
  * @return {Function}
