@@ -9,7 +9,7 @@ The function fn should be called with args immediately and then called again eve
 
 */
 
-
+ 
 /**
  * @param {Function} fn
  * @param {Array} args
