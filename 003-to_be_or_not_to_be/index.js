@@ -5,7 +5,7 @@ Write a function expect that helps developers test their code. It should take in
 -> notToBe(val) accepts another value and returns true if the two values !== each other. If they are equal, it should throw an error "Equal".
 */
 
-
+   
 /**
  * @param {string} val
  * @return {Object}
