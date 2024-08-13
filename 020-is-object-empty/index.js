@@ -26,4 +26,11 @@ var isEmpty = function(obj) {
 
 How to solve:-
 
+1. Basically we have to check if have an empty array which is represented by '[]' or object which is represented by '{}'.
+
+2. To check for array we will use if else with if holding the condition 'Array.isArray(obj)' which will help in determining if the object 'obj' is an array and if it is then we check the length using 'obj.length' and check if it's 0 then return it.
+
+3. For object we check the key in object using 'Object.keys(obj)' which will retrieve the keys of the objects. We create a 'arr' array to store the keys and similar to array we check the length using 'arr.length' and if it's equal to 0 then return it.
+
+
 */
