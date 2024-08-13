@@ -32,10 +32,16 @@ var debounce = function(fn, t) {
 };
 
 
-
-
 /*
 
 How to solve:-
+
+1. In simple words we don't want to call the function or api over and over again, instead we will only focus on the recent call of the function or api and return/execute result accordingly.
+
+2. We will create a 'timer' variable outside of the return function so it's initialed only once when the function is called and not over and over again every time the return function is called. 
+
+3. We will use 'setTimeout()' so that the function 'fn(...args)' is executed after the given time 't' and store it in 'timer'.
+
+4. We want to stop all the functions are called before the given time 't' so we will use 'clearTimeout(timer)'.
 
 */
