@@ -43,10 +43,29 @@ How to solve:-
 
 1. We create an empty object 'result' to store merged objects, using the id as the key.
 
-2. We use a 'for loop' to iterate through 'arr1'. For each object, use its 'id' as a key in the 'result' object. Assign a copy of the object '({ ...arr1[i] })' to 'result[arr1[i].id]'. This creates a shallow copy of the object to avoid directly modifying the original object.
+2. We use a 'for loop' to iterate through 'arr1'. For each object, use its 'id' as a key in the 'result' object. Assign a copy of the object '({ ...arr1[i] })' to 'result[arr1[i].id]'. This creates a shallow copy of the object to avoid directly modifying the original object. 
 
 3. Similarly we iterate through 'arr2'. For each object, check if 'result' already has an entry with the same id using '(result[arr2[i].id])'. If it does then merge properties from 'arr2[i]' into the existing object using 'Object.assign()'. This updates the object in 'result' with properties from 'arr2[i]', allowing properties in 'arr2' to override those in 'arr1'. If it doesn’t then add the object from 'arr2' to 'result' with its 'id' as the key, using '{ ...arr2[i] }' to create a copy.
 
-4. 'Object.values(result)' converts the result object into an array of its values (the merged objects). '.sort((a, b) => a.id - b.id)' sorts this array in ascending order by id. After this we return it.
+Note 1: Object.assign(target, source) is a method used to copy the properties from the source object to the target object. If a property exists in both objects, the value from the source object will overwrite the value in the target object.
 
+Note 2: Example of Object.assign()
+
+let result = {
+    2: { id: 2, name: "Bob", age: 30 }
+};
+
+let arr2 = [
+    { id: 2, name: "Bobby", city: "New York" }
+];
+
+Object.assign(result[arr2[i].id], arr2[i]);
+
+Output:
+
+{
+    2: { id: 2, name: "Bobby", age: 30, city: "New York" }
+};
+
+4. 'Object.values(result)' converts the result object into an array of its values (the merged objects). '.sort((a, b) => a.id - b.id)' sorts this array in ascending order by id. After this we return it.
 */
