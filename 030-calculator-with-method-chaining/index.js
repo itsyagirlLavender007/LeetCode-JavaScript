@@ -83,4 +83,14 @@ class Calculator {
 
 How to solve:-
 
+1. We create 'this.result' to hold the value passed in the constructor.
+
+2. We use our usual maths logic with add, subtract, multiply [Check if the value is 0 if is then we throw an error], divide, power of methods. 
+
+3. In 'getResult()' we simply return the value that the 'this.result' holds at that point.
+
+Note 1: 
+
+Chaining: Each method modifies the result and returns the Calculator instance, allowing subsequent methods to be called.
+
 */
