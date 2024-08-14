@@ -15,26 +15,26 @@ You may assume the obj is the output of JSON.parse. In other words, it is valid 
 var compactObject = function(obj) {
     
     if(obj === null){
-        return obj
+        return obj;
     }
 
     if(typeof obj !== "object"){
-        return obj
+        return obj;
     }
 
     if(Array.isArray(obj)){
-        return obj.filter(Boolean).map(compactObject)
+        return obj.filter(Boolean).map(compactObject);
     }
 
     const compacted = {}
     for(const key in obj){
         let value = compactObject(obj[key])
         if(value){
-            compacted[key] = value
+            compacted[key] = value;
         }
     }
 
-    return compacted
+    return compacted;
 };
 
 /*
