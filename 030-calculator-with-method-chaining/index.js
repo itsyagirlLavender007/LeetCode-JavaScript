@@ -89,7 +89,7 @@ How to solve:-
 
 3. In 'getResult()' we simply return the value that the 'this.result' holds at that point.
 
-Note 1: 
+Note 1:   
 
 Chaining: Each method modifies the result and returns the Calculator instance, allowing subsequent methods to be called.
 
