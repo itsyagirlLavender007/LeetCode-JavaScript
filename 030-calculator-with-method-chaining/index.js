@@ -78,7 +78,7 @@ class Calculator {
         return this.result;
     }
 }
-
+  
 /*
 
 How to solve:-
